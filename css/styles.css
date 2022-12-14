@@ -1,0 +1,319 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  letter-spacing: 0.02rem;
+  line-height: 1.4;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+section {
+  margin-top: 32px;
+}
+
+.content {
+  width: 90%;
+  /* border: 1px black solid; */
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* header */
+
+header {
+  background: rgb(203, 247, 255);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(11, 60, 12);
+}
+
+.menu {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+/* headerここまで */
+/* イメージ */
+
+.image {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.topimage {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.image-b {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.image-b span {
+  color: rgb(255, 255, 253);
+  background: rgb(2, 196, 53);
+}
+
+.image-p {
+  position: absolute;
+  top: 60%;
+  left: 15px;
+  position: absolute;
+  background: rgb(11, 84, 243);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+/* お掃除エリア */
+.area {
+  padding: 10px 20px;
+  background: skyblue;
+  text-align: center;
+}
+
+.area h2 {
+  text-align: center;
+}
+
+div.area-button {
+  /* border: 1px black solid; */
+  
+  margin: 8px ;
+  border-radius: 4px;
+  padding: 8px;
+  display: inline-block;
+  color: aliceblue;
+  background: orange;
+}
+
+/* メニュー */
+.clean-menu {
+  text-align: center;
+}
+
+.clean-menu h2, .clean-menu h3 {
+  color: rgb(9, 64, 214);
+  font-weight: 700;
+}
+
+
+
+.price {
+  display: inline-block;
+  background: rgb(15, 249, 54);
+  color: white;
+  padding: 2px;
+  margin: 3px 0;
+}
+
+.clean-info {
+  display: inline-block;
+  background: rgb(182, 182, 182);
+  color: white;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+div .card {
+  /* outline: 2px red solid; */
+  text-align: center;
+  background: rgb(254, 253, 245);
+  padding: 8px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px 2px rgba(153, 153, 153, 0.8);
+  max-width: 450px;
+  margin: auto;
+}
+
+.card + .card{
+  margin-top: 32px;
+}
+
+.card-image {
+  height: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* philosophy */
+
+.philosophy {
+  padding: 16px;
+  text-align: center;
+  background: #ccc;
+}
+
+.philosophy h2 {
+  /* font-size: 0.8rem; */
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  color: rgb(9, 64, 214);
+  letter-spacing: normal;
+}
+
+.philosophy ul {
+  /* padding: 8px 32px; */
+  text-align: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-20%);
+}
+
+.philosophy ul li + li {
+  margin-top: 8px;
+}
+
+
+.philosophy .detail {
+  display: inline-block;
+  margin-top: 16px;
+  background: orange;
+  text-align: center;
+  color: aliceblue;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* blog */
+
+.blog p {
+  text-align: center;
+}
+
+/* 問い合わせ */
+.contact-sec {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.contact-div {
+  text-align: center;
+  width: 90%;
+  margin: 24px auto;
+  text-align: left;
+}
+
+.ab {
+  outline: 1px red solid;
+}
+
+.contact {
+  color: aliceblue;
+  font-weight: bold;
+  width: 200px;
+  padding: 8px 16px;
+  background: rgb(0, 215, 75);
+  display: inline-block;
+  text-align: center;
+}
+
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: rgb(227, 227, 227);
+  padding: 8px 10%;
+  margin-top: 32px;
+}
+footer * {
+  border-top: 1px solid rgb(186, 186, 186);
+  padding: 16px 0px;
+}
+
+footer :nth-child(1) {
+  border: none;
+}
+
+/* お問い合わせ */
+.container {
+  width: 80%;
+  max-width: 500px;
+  margin: 16px auto;
+}
+
+.container label {
+  padding: 4px;
+}
+
+.container input {
+  border: solid 1px black;
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.container textarea {
+  border: solid 1px black;
+  width: 100%;
+  padding: 8px;
+  height: 300px;
+}
+
+.container form > * {
+  margin-top: 16px;
+}
+
+.container form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-input {
+  background: rgb(56, 139, 249);
+  display: inline-block;
+  max-width: 100px;
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.tel div {
+  margin: 8px;
+  border: 1px solid blue;
+  background: skyblue;
+}
+
+.contact-explain {
+  margin-left: 24px;
+  list-style: disc;
+}
+
+.contact-explain li {
+  margin: 8px 0;
+}

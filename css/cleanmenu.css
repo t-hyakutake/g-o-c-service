@@ -1,0 +1,114 @@
+
+
+h2 {
+  margin: 24px 0px;
+}
+
+.hero {
+  display: none;
+  text-align: center;
+  height: 400px;
+  margin: 24px;
+  overflow: hidden;
+}
+
+.hero image {
+  /* margin: 0 auto; */
+  height: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero img {
+  height: 100%;
+  max-width: 100%;
+}
+
+/* clean詳細 */
+
+.container {
+  margin: 8px auto;
+  width: 90%;
+  /* outline: 1px red solid; */
+}
+
+.container .cleanprice,
+.container .cleanhour {
+  width: 100%;
+  /* outline: 1px blue solid; */
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 3px;
+  /* margin: 16px 0px 16px 0px; */
+}
+
+.container .cleanprice .key, .container .cleanhour .key {
+  /* outline: 1px orange solid; */
+  text-align: end;
+  padding: 5px 0;
+
+  /* background: rgb(198, 230, 255); */
+}
+
+
+.container .cleanprice .key::after,
+.container .cleanhour .key::after {
+  content: ":";
+}
+
+li + li {
+  margin-top: 4px;
+}
+
+.cleancontent .container > div {
+  margin-top: 16px;
+}
+
+.content .key {
+  background: rgb(33, 141, 12);
+  display: inline-block;
+  padding: 4px;
+  color: aliceblue;
+  border-radius: 2rpx;
+}
+
+.cleanprice .key {
+  transform: translateY(4px);
+}
+
+.container  .value {
+  padding: 5px 0;
+  
+}
+
+.value-price {
+  
+  font-size: large;
+  color: blue;
+  font-weight: 700;
+}
+
+.cleancontent .container .cleanhour {
+  margin-top: 0;
+}
+
+.alert h3 {
+  display: inline-block;
+  padding: 2px;
+  background: red;
+  color: aliceblue;
+}
+
+.content ul {
+  list-style: disc;
+  margin-left: 24px;
+}
+
+.alert-ul {
+  margin-left: 24px;
+  list-style: disc;
+}
+
+.alert-ul li {
+  margin-top: 8px;
+}
