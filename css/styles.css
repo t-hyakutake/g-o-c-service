@@ -222,9 +222,6 @@ div .card {
   text-align: left;
 }
 
-.ab {
-  outline: 1px red solid;
-}
 
 .contact {
   color: aliceblue;
@@ -301,12 +298,6 @@ footer :nth-child(1) {
   text-align: center;
   margin-left: 50%;
   transform: translateX(-50%);
-}
-
-.tel div {
-  margin: 8px;
-  border: 1px solid blue;
-  background: skyblue;
 }
 
 .contact-explain {
