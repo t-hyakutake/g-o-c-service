@@ -16,7 +16,6 @@ section {
 
 .content {
   width: 90%;
-  /* border: 1px black solid; */
   margin: 0 auto;
 }
 
@@ -102,8 +101,6 @@ h1 {
 }
 
 div.area-button {
-  /* border: 1px black solid; */
-  
   margin: 8px ;
   border-radius: 4px;
   padding: 8px;
@@ -209,19 +206,16 @@ div .card {
   text-align: center;
 }
 
-/* 問い合わせ */
+/* top-page 問い合わせ */
 .contact-sec {
   text-align: center;
   margin-top: 80px;
 }
 
 .contact-div {
-  text-align: center;
   width: 90%;
   margin: 24px auto;
-  text-align: left;
 }
-
 
 .contact {
   color: aliceblue;
@@ -229,10 +223,10 @@ div .card {
   width: 200px;
   padding: 8px 16px;
   background: rgb(0, 215, 75);
+  border-radius: 4px;
   display: inline-block;
   text-align: center;
 }
-
 
 /* footer */
 
