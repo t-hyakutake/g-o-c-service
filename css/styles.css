@@ -1,9 +1,16 @@
+:root {
+  --secondaly-txtcolor: rgb(9, 64, 214);
+  --main-color: ;
+  --sub-color: ;
+  --button-bgcolor:orange;
+  --button-txtcolor:rgb(255, 252, 252);
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.3rem;
   font-size: clamp(1.3rem, 2vw, 1.6rem);
   letter-spacing: 0.02rem;
   line-height: 1.4;
@@ -43,12 +50,14 @@ header {
 
 h1 {
   font-weight: bold;
+  font-size: 1.5rem;
   color: rgb(11, 60, 12);
+  margin-left: 24px;
 }
 
-.menu {
+/* .menu {
   font-size: clamp(2.5rem, 4vw, 4rem);
-}
+} */
 
 /* headerここまで */
 /* イメージ */
@@ -115,24 +124,30 @@ div.area-button {
 }
 
 .clean-menu h2, .clean-menu h3 {
-  color: rgb(9, 64, 214);
+  color: var(--secondaly-txtcolor);
   font-weight: 700;
 }
 
+.clean-menu h3 {
+  margin: 8px;
+  font-weight: bold;
+}
 
 
 .price {
   display: inline-block;
-  background: rgb(15, 249, 54);
+  background: rgb(0, 166, 14);
   color: white;
-  padding: 2px;
+  padding: 4px;
+  border-radius: 3px;
   margin: 3px 0;
 }
 
 .clean-info {
   display: inline-block;
-  background: rgb(182, 182, 182);
-  color: white;
+  background: var(--button-bgcolor);
+  color: var(--button-txtcolor);
+  font-weight: bold;
   margin: 8px;
   padding: 8px;
   border-radius: 4px;
@@ -163,32 +178,22 @@ div .card {
 }
 
 /* philosophy */
-
 .philosophy {
   padding: 16px;
-  text-align: center;
   background: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .philosophy h2 {
-  /* font-size: 0.8rem; */
   font-size: clamp(1.5rem, 2vw, 2rem);
   color: rgb(9, 64, 214);
-  letter-spacing: normal;
-}
-
-.philosophy ul {
-  /* padding: 8px 32px; */
-  text-align: left;
-  position: relative;
-  left: 50%;
-  transform: translateX(-20%);
 }
 
 .philosophy ul li + li {
   margin-top: 8px;
 }
-
 
 .philosophy .detail {
   display: inline-block;
@@ -228,14 +233,46 @@ div .card {
   text-align: center;
 }
 
-/* footer */
+/* 下方のナビ */
+.nav {
+  border-top: 1px solid #ccc;
+  background: white;
+  padding: 8px 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
+}
+
+.nav li {
+  text-align: center;
+  width: 70px;
+}
+
+.nav i {
+  font-size: 1.5rem;
+}
+
+.nav p {
+  font-size: 0.8rem;
+}
+
+/* footer */
 footer {
   display: flex;
   flex-direction: column;
   text-align: center;
   background: rgb(227, 227, 227);
-  padding: 8px 10%;
+  padding-top: 8;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 64px;
   margin-top: 32px;
 }
 footer * {
@@ -247,7 +284,7 @@ footer :nth-child(1) {
   border: none;
 }
 
-/* お問い合わせ */
+/* お問い合わせ(contact.html) */
 .container {
   width: 80%;
   max-width: 500px;
