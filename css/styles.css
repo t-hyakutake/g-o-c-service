@@ -48,7 +48,7 @@ header {
   padding: 0 3%;
 }
 
-h1 {
+h1, .title {
   font-weight: bold;
   font-size: 1.5rem;
   color: rgb(11, 60, 12);
@@ -338,4 +338,40 @@ footer :nth-child(1) {
 
 .contact-explain li {
   margin: 8px 0;
+}
+
+/* otherhtml */
+.main-h1 {
+margin: 24px 0px;
+color: rgb(32, 32, 32);
+text-align: center;
+}
+
+
+/* flow.html */
+.flow {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.flow-ol  {
+  list-style-type: decimal;
+  margin-left: 2rem;
+  margin-bottom: 24px;
+}
+
+li + li {
+  margin-top: 8px;
+}
+
+.flow section div {
+  text-align: center;
+}
+
+.contact-after {
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
 }
