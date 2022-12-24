@@ -6,6 +6,7 @@
   --button-txtcolor:rgb(255, 252, 252);
 }
 
+
 html {
   font-size: 62.5%;
 }
@@ -123,7 +124,7 @@ div.area-button {
   text-align: center;
 }
 
-.clean-menu h2, .clean-menu h3 {
+.clean-menu h3 {
   color: var(--secondaly-txtcolor);
   font-weight: 700;
 }
