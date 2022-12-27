@@ -56,10 +56,6 @@ h1, .title {
   margin-left: 24px;
 }
 
-/* .menu {
-  font-size: clamp(2.5rem, 4vw, 4rem);
-} */
-
 /* headerここまで */
 /* イメージ */
 
@@ -257,12 +253,9 @@ div .card {
 }
 
 .nav i {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-.nav p {
-  font-size: 0.8rem;
-}
 
 /* footer */
 footer {
