@@ -175,17 +175,28 @@ div .card {
 }
 
 /* response design */
-@media (min-width: 750px) {
-  .card {
-    width: calc(50% - 20px);
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: top;
-  }
+  
+  @media (min-width: 750px) {
+    .card {
+      width: calc(50% - 20px);
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: top;
+    }
   .card:nth-child(2n) {
     margin-right: 0;
+    margin-left: 16px;
+  }
+  .card:nth-child(1) {
+    margin-top: 32px;
+  }
+  .card-image img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
   }
 }
+
 
 
 /* philosophy */
