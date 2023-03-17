@@ -281,6 +281,10 @@ div .card {
   font-size: 2rem;
 }
 
+.nav ul li {
+  width: 90px;
+}
+
 
 /* footer */
 footer {
